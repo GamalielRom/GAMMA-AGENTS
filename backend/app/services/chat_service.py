@@ -15,9 +15,9 @@ from app.models.agent_tool import AgentTool
 from app.schemas.chat import ChatRequest, ChatResponse
 from datetime import datetime, timedelta
 from app.services.calendar_service import create_demo_event
-from backend.app.services.datetime_parser import parse_requested_datetime
+from app.services.datetime_parser import parse_requested_datetime
 from app.services.calendar_service import create_demo_event
-from backend.app.services.schedule_extractor import extract_schedule_datetime_with_llm
+from app.services.schedule_extractor import extract_schedule_datetime_with_llm
 
 #Here we build the agent with the response, name and config
 def build_dummy_response(agent: Agent, config: AgentConfig, user_message: str) -> str:

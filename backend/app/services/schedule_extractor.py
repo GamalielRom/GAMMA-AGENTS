@@ -6,7 +6,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 from app.services.llm_service import generate_agent_response
-from backend.app.services.datetime_parser import parse_requested_datetime, DEFAULT_TIMEZONE
+from app.services.datetime_parser import parse_requested_datetime, DEFAULT_TIMEZONE
 
 
 def extract_json_block(text: str) -> dict |None:
